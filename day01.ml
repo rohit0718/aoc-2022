@@ -1,6 +1,6 @@
 open Core
 
-let input = In_channel.read_lines "./t1.in"
+let input = In_channel.(input_lines stdin)
 
 let rec sum list acc =
   match list with
